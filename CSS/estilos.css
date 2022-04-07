@@ -1,0 +1,317 @@
+@font-face { 
+    font-family: "poppins"; 
+    src: url(/Assets/Fonts/Poppins-ExtraLight.ttf);
+}
+*{
+    margin: 0.3%;
+    padding: 0.3%;
+    border:0.3;
+    color: white;
+    font-family: "poppins";
+}
+/*header*/
+header{
+    font-family:"poppins"; color: white; 
+    background: rgb(3,2,20);
+    background: linear-gradient(90deg, rgba(3,2,20,1) 0%, rgba(7,7,80,1) 0%, rgba(4,3,30,1) 51%, rgba(9,11,121,0.6615021008403361) 100%); 
+    margin: 0px;
+    border-style: solid; color: aliceblue; 
+    padding: 5px;  
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    align-items: center;
+    height: 15vh;
+    
+}
+/*TituloBsASRIsk*/
+h1{
+    color: white;
+    font-size: 35px;
+    font-family: "poppins-bolt"; 
+    margin-inline-start: 10px;
+    grid-column: 1/2;
+}
+/*Menudenavegacion*/
+.navegacion {
+    grid-column: 3/4;
+}
+.navegacionmenu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.menucelular{
+    display: none;
+}
+/*anomiaciondelogo*/
+.logo {
+    height: 90px;
+    width: 100px;
+    grid-column: 2/3;
+    border-radius: 15px;
+    justify-self: center;
+    /*transform-translate*/
+    animation-name: rotar_logo;
+    animation-iteration-count:initial;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+/*animacion con movimiento del logo*/
+@keyframes  rotar_logo{
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+/*colordelosiconosdelasredessociales*/
+.fa-brands {
+    font-size: 30px;
+}
+li a i {
+    color: aquamarine;
+}
+/*body*/
+body{
+    background-color: #002f51;
+}
+/*menuprincipal*/
+.menuprincipal {
+    height: 80vh;
+    background-image: url(../Assets/Images/Fondo-de-pagina/Fondo\ de\ Pagina2\ Bs\ As\ Risk.jpg); 
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    margin: 0%;
+    margin-top: 5px;
+}
+.contenido {
+    grid-column: 6/9;
+    grid-row: 1/4;
+    text-decoration: none;
+}
+h2{
+    color: white;
+    font-size: 50px;
+    font-family: "poppins";
+    text-align: center;
+}
+.titulocompañia{
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+p{
+    color: white;
+    font-size:20px;
+    font-family: "poppins";
+}
+/*paginanuestroequipo*/
+.equipo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.director_general{
+    width: 200px;
+    height: 400px;
+    margin: 3px;
+    border: #334257;
+    background-color: none;
+    text-align: center;
+}
+.responsable_argentina{
+    width: 200px;
+    height: 400px;
+    margin: 3px;
+    border: #334257;
+    background-color: none;
+    text-align: center;
+}   
+.director_latam{
+    width: 200px;
+    height: 400px;
+    margin: 3px;
+    border: #334257;
+    background-color: none;
+    text-align: center;
+}   
+.team{
+    width: 200px; 
+    height: 300px;  
+}
+/*paginadeclientes*/
+.fotoclientes {
+    width: 100%;
+    height: 5%;
+}
+/*paginaservicios*/
+.tituloservicios {
+    margin-left: 20px;
+}
+.servicios{
+    border: solid; color: white; 
+    border-radius: 20px;
+    height: 220px;
+    text-align: center;font-family:"poppins"; color: white;
+}
+.gridservicios {
+    display: flex;
+    align-items: center;
+}
+a:hover{
+    background-color: rgb(10, 70, 148);
+    color: white;
+    border-radius: 5px;
+}
+.botones{
+    color: black;
+    border: 10px;
+    font-weight: bold;
+}
+/*paginacontacto*/
+.formulario{
+    color: black;
+    border: 15px;
+    font-weight: bold;
+}
+/*footer*/
+footer{
+    text-align: center; font-family: "poppins"; color: white; 
+    background: rgb(3,2,20);
+    background: linear-gradient(90deg, rgba(3,2,20,1) 0%, rgba(7,7,80,1) 0%, rgba(4,3,30,1) 51%, rgba(9,11,121,0.6615021008403361) 100%); 
+    height: 20%;
+    width: auto; 
+    line-height: 0%;
+    border-style:solid; color:aliceblue; 
+    padding: 7px;
+    display: grid;
+    margin: 0%;
+    margin-top: 5px;
+    /*gradientes*/
+}
+.derechos {
+    font-size: 15px;
+}
+/*mediaqueries*/
+@media screen and ( max-width: 1200px) {
+    header h1 {
+        font-size: 30px;   
+    }
+    header {
+        grid-template-columns: 30% 20% 50%;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .navegacionmenu {
+        font-size: 20px;
+    }
+    }
+@media screen and ( max-width: 1000px) {
+        .gridservicios {
+            grid-template-columns: 100%;
+            justify-items: center;
+        }
+        section h3 {
+            text-align: center;
+        }
+        header {
+            grid-template-columns: 25% 15% 60%
+        }
+        header h1 {
+            font-size: 25px;
+        }
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+    }
+@media screen and (max-width: 860px) {
+            header {
+                grid-template-columns: 35% 30% auto;
+            }
+            .gridservicios {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header h1 {
+                font-size: 25px;
+            }
+            h2{
+                font-size: 25px;
+            }  
+            .menuprincipal {
+                height: 600px;
+            }    
+            p {
+                font-size: 18px;
+            }  
+            .navegacion {
+                display: none;
+            }
+            .menucelular{
+                display: flex;
+                font-size: 30px;
+                justify-content: space-around;
+            }
+    }
+@media screen and ( max-width: 650px) {
+            header {
+            grid-template-columns: 35% 30% auto;
+            }
+            header h1 {
+            font-size: 20px;     
+            }
+            .logo {
+            width: 40px;
+            height: 40px;
+            } 
+            .navegacion {
+            display: none;
+            }
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+            .menuprincipal {
+                height: 600px;
+            } 
+            p {
+                font-size: 15px;
+            }  
+    }
+@media screen and ( max-width: 500px) {
+            header {
+            grid-template-columns: 35% 30% auto;
+            }
+            header h1 {
+            font-size: 14px;     
+            }
+            .logo {
+            width: 60px;
+            height: 60px;
+            } 
+            .navegacion {
+            display: none;
+            }
+            h2{
+                font-size: 15px;
+            }    
+            .menuprincipal {
+                height: 620px;
+            }  
+            p {
+                font-size: 14px;
+            }  
+            
+        }
