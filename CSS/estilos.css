@@ -61,6 +61,18 @@ h1{
 .menucelular{
     display: none;
 }
+.imagencarrusel {
+    width: 80%;
+    margin-left: 10%;
+}
+.carousel-item div p {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-item div h5 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*anomiaciondelogo*/
 .logo {
     height: 90px;
