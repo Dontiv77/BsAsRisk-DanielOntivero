@@ -313,9 +313,6 @@ footer{
             header {
             grid-template-columns: 60% 40%;
             }
-            header h1 {
-            font-size: 14px;     
-            }
             .logo {
             width: 60px;
             height: 60px;
