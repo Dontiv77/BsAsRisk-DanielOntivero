@@ -204,6 +204,12 @@ a:hover{
     border: 15px;
     font-weight: bold;
 }
+.col-md-12 {
+    border: solid whitesmoke;
+}
+.btn-primary {
+    background-color: #1d58af;
+}
 /*footer*/
 footer{
     text-align: center; font-family: "poppins"; color: white; 
