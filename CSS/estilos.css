@@ -144,6 +144,26 @@ p{
     font-family: "poppins";
 }
 /*paginanuestroequipo*/
+.row {
+    justify-content:space-evenly;
+    row-gap: 10px;
+    --bs-gutter-x: none;
+}
+.span2 {
+    background-color: #002f51;
+    padding: 25px;
+}
+.card-img-top {
+    height: 400px;
+    width: auto;
+}
+.card-body {
+    background-color: #002f51;
+}
+.card {
+    background-color:#04072c;
+}
+
 .equipo{
     display: flex;
     flex-wrap: wrap;
