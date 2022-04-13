@@ -163,40 +163,11 @@ p{
 .card {
     background-color:#04072c;
 }
-
 .equipo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.director_general{
-    width: 200px;
-    height: 400px;
-    margin: 3px;
-    border: #334257;
-    background-color: none;
-    text-align: center;
-}
-.responsable_argentina{
-    width: 200px;
-    height: 400px;
-    margin: 3px;
-    border: #334257;
-    background-color: none;
-    text-align: center;
-}   
-.director_latam{
-    width: 200px;
-    height: 400px;
-    margin: 3px;
-    border: #334257;
-    background-color: none;
-    text-align: center;
-}   
-.team{
-    width: 200px; 
-    height: 300px;  
 }
 /*paginadeclientes*/
 .fotoclientes {
@@ -238,10 +209,9 @@ footer{
     text-align: center; font-family: "poppins"; color: white; 
     background: rgb(3,2,20);
     background: linear-gradient(90deg, rgba(3,2,20,1) 0%, rgba(7,7,80,1) 0%, rgba(4,3,30,1) 51%, rgba(9,11,121,0.6615021008403361) 100%); 
-    height: 10%;
+    height: 40px;
     width: auto; 
     border-style:solid; color:aliceblue; 
-    padding: 7px;
     display: grid;
     margin: 0%;
     margin-top: 5px;
