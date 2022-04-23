@@ -1,25 +1,20 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "poppins";
+  font-family: Arial, Helvetica, sans-serif;
   src: url(/Assets/Fonts/Poppins-ExtraLight.ttf);
 }
 * {
   margin: 0.3%;
   padding: 0.3%;
   border: 0.3;
-  color: white;
+  color: #ffffff;
+  font-size: 20px;
   font-family: "poppins";
 }
 
-.bg-dark {
-  --bs-bg-opacity: none;
-  background-color: none;
-}
-
-/*headerviejo*/
+/*header*/
 header {
   font-family: "poppins";
-  color: white;
   background: rgb(3, 2, 20);
   background: linear-gradient(90deg, rgb(3, 2, 20) 0%, rgb(7, 7, 80) 0%, rgb(4, 3, 30) 51%, rgba(9, 11, 121, 0.6615021008) 100%);
   margin: 0px;
@@ -30,47 +25,78 @@ header {
   align-items: center;
   height: none;
   display: grid;
+  /*TituloBsASRIsk*/
+  /*Menudenavegacion*/
+  /*anomiaciondelogo*/
+  /*animacion con movimiento del logo*/
+  /*colordelosiconosdelasredessociales*/
 }
-
-.page-header {
+header .page-header {
   font-family: "poppins";
   src: url(/Assets/Fonts/Poppins-ExtraLight.ttf);
 }
-
-.holaaaa {
+header .holaaaa {
   font-size: 25 px;
   margin-left: 0px;
 }
-
-/*TituloBsASRIsk*/
-h1 {
-  color: white;
+header h1 {
+  color: rgb(20, 227, 175);
   font-size: 35px;
   font-family: "poppins-bolt";
   margin-inline-start: 10px;
   grid-column: 1/2;
 }
-
-/*Menudenavegacion*/
-.navegacion {
+header .bg-dark {
+  --bs-bg-opacity: none;
+  background-color: none;
+}
+header .navegacion {
   grid-column: 3/4;
 }
-
-.navegacionmenu {
+header .navegacionmenu {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   font-size: 0px;
 }
-
-.navbar-nav {
+header .navbar-nav {
   font-size: 18px;
 }
-
-.menucelular {
+header .menucelular {
   display: none;
 }
+header .logo {
+  height: 90px;
+  width: 100px;
+  grid-column: 2/3;
+  border-radius: 15px;
+  justify-self: center;
+  /*transform-translate*/
+  animation-name: rotar_logo;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+@keyframes rotar_logo {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+header .fa-brands {
+  font-size: 35px;
+}
+header li a i {
+  color: whitesmoke;
+}
 
+/*imagenesdelmenuservicios*/
 .imagencarrusel {
   width: 80%;
   margin-left: 10%;
@@ -84,42 +110,6 @@ h1 {
 .carousel-item div h5 {
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/*anomiaciondelogo*/
-.logo {
-  height: 90px;
-  width: 100px;
-  grid-column: 2/3;
-  border-radius: 15px;
-  justify-self: center;
-  /*transform-translate*/
-  animation-name: rotar_logo;
-  animation-iteration-count: initial;
-  animation-timing-function: linear;
-  animation-duration: 3s;
-  animation-delay: 3s;
-}
-
-/*animacion con movimiento del logo*/
-@keyframes rotar_logo {
-  0% {
-    transform: rotateX(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateX(360deg);
-  }
-}
-/*colordelosiconosdelasredessociales*/
-.fa-brands {
-  font-size: 35px;
-}
-
-li a i {
-  color: whitesmoke;
 }
 
 /*body*/
@@ -174,16 +164,15 @@ p {
 }
 
 .span2 {
-  background-color: #002f51;
   padding: 25px;
 }
 
 .card-img-top {
-  height: 400px;
+  height: auto;
   width: auto;
 }
 
-.card-body {
+.card-body, .span2 {
   background-color: #002f51;
 }
 
