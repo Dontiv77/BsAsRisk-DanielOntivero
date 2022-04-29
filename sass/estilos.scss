@@ -261,7 +261,7 @@ footer{
         font-size: 20px;
     }
     }
-@media screen and ( max-width: 1000px) {
+@media screen and (max-width: 1000px) {
         .gridservicios {
             grid-template-columns: 100%;
             justify-items: center;
@@ -310,7 +310,7 @@ footer{
                 justify-content: space-around;
             }
     }
-@media screen and ( max-width: 650px) {
+@media screen and (max-width: 650px)  {
             header {
             grid-template-columns: 35% 30% auto;
             }
@@ -335,7 +335,7 @@ footer{
                 font-size: 15px;
             }  
     }
-@media screen and ( max-width: 500px) {
+@media screen and (min-width: 500px) {
             header {
             grid-template-columns: 60% 40%;
             }
