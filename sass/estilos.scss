@@ -387,10 +387,8 @@ footer{
             .contenido {
                 grid-column: 2/8;
             }
-            
             .carousel-caption p {
                 font-size: 9px;
-                
             }
             .logo {
             width: 60px;
@@ -400,17 +398,16 @@ footer{
             display: none;
             }
             h2{
-                font-size: 15px;
+                font-size: 10px;
                 font-family: "poppins";
             }    
             .menuprincipal {
                 height: 620px;
             }  
-            .carousel.pointer-event {
+            .carousel .pointer-event {
                 margin-bottom: 210px;
                 margin-top: 210px;
             }
-            
             p {
                 font-size: 17px;
                 font-family: "poppins";
