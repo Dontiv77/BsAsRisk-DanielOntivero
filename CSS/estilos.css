@@ -262,13 +262,18 @@ footer {
 }
 
 /*mediaqueries*/
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) and (min-width: 1001px) {
   header h1 {
     font-size: 30px;
   }
 
   header {
     grid-template-columns: 30% 20% 50%;
+  }
+
+  .carousel.pointer-event {
+    margin-bottom: 310px;
+    margin-top: 310px;
   }
 
   .logo {
@@ -280,7 +285,7 @@ footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (min-width: 861px) {
   .gridservicios {
     grid-template-columns: 100%;
     justify-items: center;
@@ -298,12 +303,30 @@ footer {
     font-size: 25px;
   }
 
+  .titulocompañia {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  .carousel.pointer-event {
+    margin-bottom: 310px;
+    margin-top: 310px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .contenido {
+    grid-column: 2/8;
+  }
+
   .logo {
     width: 70px;
     height: 70px;
   }
 }
-@media screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) and (min-width: 681px) {
   header {
     grid-template-columns: 35% 30% auto;
   }
@@ -321,8 +344,22 @@ footer {
     font-size: 25px;
   }
 
+  .titulocompañia {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  .contenido {
+    grid-column: 2/8;
+  }
+
   .menuprincipal {
     height: 600px;
+  }
+
+  .carousel.pointer-event {
+    margin-bottom: 310px;
+    margin-top: 310px;
   }
 
   p {
@@ -339,7 +376,7 @@ footer {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 680px) and (min-width: 501px) {
   header {
     grid-template-columns: 35% 30% auto;
   }
@@ -353,8 +390,21 @@ footer {
     height: 40px;
   }
 
+  .carousel-caption p {
+    font-size: 12px;
+  }
+
   .navegacion {
     display: none;
+  }
+
+  .titulocompañia {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  .contenido {
+    grid-column: 2/8;
   }
 
   .logo {
@@ -366,13 +416,31 @@ footer {
     height: 600px;
   }
 
+  .carousel.pointer-event {
+    margin-bottom: 210px;
+    margin-top: 210px;
+  }
+
   p {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 500px) {
   header {
     grid-template-columns: 60% 40%;
+  }
+
+  .titulocompañia {
+    font-size: 41px;
+    margin-top: 20px;
+  }
+
+  .contenido {
+    grid-column: 2/8;
+  }
+
+  .carousel-caption p {
+    font-size: 9px;
   }
 
   .logo {
@@ -386,14 +454,21 @@ footer {
 
   h2 {
     font-size: 15px;
+    font-family: "poppins";
   }
 
   .menuprincipal {
     height: 620px;
   }
 
+  .carousel.pointer-event {
+    margin-bottom: 210px;
+    margin-top: 210px;
+  }
+
   p {
-    font-size: 14px;
+    font-size: 17px;
+    font-family: "poppins";
   }
 }
 
